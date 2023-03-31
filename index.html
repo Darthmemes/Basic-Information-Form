@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <main>
+      <script type="text/javascript" src="index.js"></script>
+
+      <form class="user-form">
+        <div class="helper-text">*required field</div>
+
+        <label>First Name </label>
+        <input type="text" id="firstname" required />
+
+        <br />
+
+        <label>Last Name </label>
+        <input type="text" id="lastname" />
+
+        <br />
+
+        <label>Telephone </label>
+        <input
+          type="tel"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="301-123-3123"
+          required
+        />
+
+        <br />
+
+        <label>Date of birth </label>
+        <input type="date" id="dateOfBirth" required />
+
+        <br />
+
+        <label>Username </label>
+        <input type="text" id="username" required />
+
+        <br />
+
+        <label for="studentID">Email </label>
+        <input type="text" id="email" required />
+
+        <br />
+
+        <label>Password </label>
+        <input
+          type="password"
+          pattern="(?=.*\d)(?=.*[a-z]).{8,}"
+          id="password"
+        />
+
+        <br />
+
+        <label>Confirm Password </label>
+        <input type="password" id="checkPassword" />
+
+        <br />
+
+        <div class="bottom-button">
+          <input type="submit" id="submitForm" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
